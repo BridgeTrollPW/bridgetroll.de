@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="static/index.css" />
+</head>
+
+
+<body>
+  <div class="scanlines"></div>
+  <div class="scanline"></div>
+  <div class="flicker"></div>
+  <div class="box progress">
+    <h2>Progress Bar</h2>
+    <div class="box-body">
+      <div class="progress-box">
+        <p class="text-center progress-text">Loading Floppy Disk 1 of 4,273...</p>
+        <div class="progress-bar"><span id="loader" style="width:0%"></div>
+        <script>
+          var elem = document.getElementById("loader");
+          var width = 1;
+          var id = setInterval(frame, 5);
+          function frame() {
+            if (width >= 100) {
+              clearInterval(id);
+              document.querySelector(".body").style.display = "block";
+              document.querySelector(".progress").style.display = "none";
+            } else {
+              width++;
+              elem.style.width = width + '%';
+              document.querySelector(".progress-text").style.display = "Loading Floppy Disk " + width + " of 4,273...";
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+  <div class="body" style="display: none">
+    <div class="flex">
+      <div class="box" style="width:70%;">
+        <h2>Menu</h2>
+        <div class="box-body">
+          <nav style="display: inline-block">
+            <ul style="display: inline-block">
+              <li style="display: inline-block"><a href="#me"><label><button type="submit" class="primary">About
+                      Me</button></label></a></li>
+              <li style="display: inline-block"><a href="#skills"><label><button type="submit"
+                      class="primary">Skills</button></label></a></li>
+              <li style="display: inline-block"><a href="#projects"><label><button type="submit"
+                      class="primary">Projects</button></label></a></li>
+              <li style="display: inline-block"><a href="#cv"><label><button type="submit" class="primary">What I
+                      do</button></label></a></li>
+              <li style="display: inline-block"><a href="#contact"><label><button type="submit"
+                      class="primary">Contact</button></label></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="box" style="width: 20%">
+
+        <div class="box-body">
+          <p>Bridge Troll's Website</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="me">
+      <div class="box">
+        <h2>About Me</h2>
+        <div class="box-body">
+          <pre>
+Hey there,
+I'm Bridge Troll.
+Github: <a href="https://github.com/BridgeTrollPW">https://github.com/BridgeTrollPW</a>
+Steam: <a href="https://steamcommunity.com/id/Bridge_Troll/">https://steamcommunity.com/id/Bridge_Troll/</a>
+</pre>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="box turquoise text-dark">
+        <h2>Skills</h2>
+        <div class="box-body">
+          <pre>
+I mostly do Java SE/Java EE, PHP and SQL. I also worked with other languages like C, C++, C#, Lua, Python.
+Used to the architecture/infrastructure of microservices, jBoss applications, postgres databases, web-apis.
+</pre>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="box">
+        <h2>Projects</h2>
+        <div class="box-body">
+          <pre>
+Currently <a href="https://www.mb-kingdoms.com/forum/">https://www.mb-kingdoms.com/forum/</a> is a project I am part of.
+We do mod development for the videogame Mount & Blade and are currently looking forward to improve and port our current
+mod named "Persistent Kingdoms" to the new Mount & Blade 2: Bannerlord as soon as it is released.
+</pre>
+        </div>
+      </div>
+    </section>
+    <section id="cv">
+      <div class="box">
+        <h2>What I do</h2>
+        <div class="box-body">
+          <pre>
+Currently working as backend programmer in the financial technology branch. 
+HBCI, realtime-loan-decisioning systems and API development is what I do.
+</pre>
+        </div>
+      </div>
+    </section>
+
+
+    <pre class="green ">Contact:</pre>
+    <section id="contact" class="body">
+
+      TkRJZ056SWd
+      OamtnTmpRZ0
+      5qY2dOalVnT
+      lRRZ056SWdO
+      a1lnTmtNZ05
+      rTWdJRFpESU
+      RZNUlEWTJJR
+      GN5SURZNUlE
+      WXlJRFpCSUR
+      aR0lEY3lJRF
+      F3SURaRElEW
+      TVJRGMySURZ
+      MUlESkZJRFk
+      wSURZMQ==
+    </section>
+  </div>
+</body>
+
+</html>
