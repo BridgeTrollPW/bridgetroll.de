@@ -213,6 +213,7 @@ label > input[type=file] {
     background: yellow; }
 
     pre {
+      white-space: normal;
       font-family:FixedsysExcelsior301Regular;
       font-size:16px;
       font-weight:normal;
